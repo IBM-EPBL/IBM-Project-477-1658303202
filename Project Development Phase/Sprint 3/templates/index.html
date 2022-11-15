@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Digital Naturalist</title>
+      
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+   </head>
+   <body class="main-layout">
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <header class="full_bg">
+         <div class="header">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="header_bottom">
+                        <div class="row">
+                           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">
+                              <div class="full">
+                                 <div class="center-desk">
+                                    <div class="logo">
+                                       <a href="index.html">Digital Naturalist</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+         <section class="banner_main">
+            <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
+               <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" class="active"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <div class="carousel-caption  banner_po">
+                           <div class="row">
+                              <div class="col-md-9">
+                                 <div class="build_box">
+                                    <h1>Stop Thinking</h1>
+                                    <p>You've come to the right place<br> Just upload the pic and wait for the result</p>
+                                    <form action="/upload_img">
+                                       <input class="read_more conatct_btn" type="submit" value="Submit">
+                                       
+                                    </form>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </header>
+      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+   </body>
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Python Flask File Upload Example</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/out_pg.css') }}" />
+
+{% if model_out %}
+    
+	<div>
+		<img src="{{ url_for('display_image', filename=model_out.filename) }}">
+	</div>
+	<div id="answer">
+		<h2>Name : {{model_out.Name}}</h2><br>
+		<h2>Scientic Name : {{model_out.Scientific_Name}}</h2><br>
+		<h2>Class : {{model_out.Class}}</h2><br>
+		<h2>Description : {{model_out.Descriprion}}</h2><br>
+	</div>
+{% endif %}
