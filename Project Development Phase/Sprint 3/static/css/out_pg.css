@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(../images/banner2.jpg);
+    background-size: 100% 100%;
+}
+img{
+    border: 5px red solid;
+}
+
+h2{
+    padding: 10px;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.258);
+}

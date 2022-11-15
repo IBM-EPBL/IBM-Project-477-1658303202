@@ -1,0 +1,669 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+}
+
+.container {
+     max-width: 1170px;
+}
+.container-2 {
+     max-width: 900px;
+     margin-left: 280px;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #ffffff;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px;
+}
+
+h2 {
+     font-family: 'Raleway', sans-serif;
+     font-size: 22px;
+}
+
+h3 {
+     font-size: 18px;
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+ :focus {
+     outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+
+.lead {
+     font-size: 18px;
+     line-height: 30px;
+     color: #767676;
+     margin: 0;
+     padding: 0;
+}
+
+.form-control:focus {
+     border-color: #ffffff !important;
+     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+     border: none !important;
+}
+
+.badge {
+     font-weight: 500;
+}
+
+blockquote {
+     margin: 20px 0 20px;
+     padding: 30px;
+}
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+.full {
+     float: left;
+     width: 100%;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+.text_align_center {
+     text-align: center;
+}
+
+.text_align_left {
+     text-align: left;
+}
+
+.text_align_right {
+     text-align: right;
+}
+
+
+/**-- heading section --**/
+
+
+/*---------------------------- preloader area ----------------------------*/
+
+.loader_bg {
+     position: fixed;
+     z-index: 9999999;
+     background: rgba(255, 232, 205, 0.5);
+     width: 100%;
+     height: 100%;
+}
+
+.loader {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.loader img {
+     width: 80px;
+}
+
+
+/*-- header --*/
+
+.header {
+     width: 100%;
+     height: 116px;
+     border-top: #000000d7 solid 50px;
+}
+
+
+.header_bottom {
+     background-color: rgba(7, 54, 62, 0.25);
+     height: 87px;
+     padding: 25px 25px;
+}
+
+.logo {
+     padding-top: 5px;
+}
+
+.logo a {
+     font-size: 30px;
+     line-height: 25px;
+     color: #ffffff;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+
+
+/*-- navigation--*/
+
+.navigation.navbar {
+     float: right;
+     padding: 0;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+     color: #ffffff;
+     font-size: 20px;
+     line-height: 20px;
+     font-weight: 500;
+     text-transform: uppercase;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+     background: #fe010182;
+     color: #fff;
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+     background: #fe010182;
+     color: #fff;
+}
+
+.navbar-expand-md .navbar-nav {
+     padding-right: 10px;
+}
+
+ul.search {
+     padding-left: 10px;
+}
+
+ul.search li a {
+     color: #ffffff;
+}
+
+ul.search li a:hover {
+     color: #fe010182;
+}
+
+
+/** banner section **/
+
+.full_bg {
+     background: url(../images/banner2.jpg);
+     background-size: 100% 900px;
+     background-repeat: no-repeat;
+}
+
+.banner_main {
+     position: relative;
+     padding-bottom: 212px;
+}
+
+.build_box {
+     text-align: left;
+     padding-top: 20%;
+}
+
+.banner_po {
+     position: inherit;
+}
+
+.build_box p {
+     color: rgb(255, 255, 255);
+     font-size: 17px;
+     line-height: 30px;
+     font-weight: normal;
+     margin-bottom: 55px;
+}
+
+.build_box h1 {
+     font-size: 100px;
+     font-weight: bold;
+     color: rgba(255, 0, 0, 0.83);
+     line-height: 90px;
+     padding-bottom: 20px;
+     display: block;
+}
+
+.build_box .conatct_btn {
+     font-size: 20px;
+     padding: 15px 0;
+     text-transform: uppercase;
+     font-weight: normal;
+     max-width: 278px;
+     background: #fc010183;
+     border: none;
+}
+
+.build_box .conatct_btn:hover {
+     background: #ff0000;
+}
+
+#myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+     width: 75px;
+     height: 75px;
+     background: #161825;
+     opacity: 1;
+     font-size: 42px;
+     color: #fff;
+     top: 134%;
+     border-radius: 40px;
+}
+
+#myCarousel .carousel-control-prev:hover,
+#myCarousel .carousel-control-next:hover,
+#myCarousel .carousel-control-prev:focus,
+#myCarousel .carousel-control-next:focus {
+     background: #fd9801;
+     color: #fff;
+}
+
+#myCarousel .carousel-control-prev {
+     right: 15%;
+     left: inherit;
+}
+
+#myCarousel .carousel-control-next {
+     right: 9%;
+}
+
+.banner .carousel-indicators {
+     display: none;
+}
+
+
+/** end banner section **/
+
+.titlepage {
+     text-align: center;
+     padding-bottom: 40px;
+}
+
+.titlepage h2 {
+     font-size: 40px;
+     color: #1c1c1c;
+     line-height: 40px;
+     font-weight: 700;
+     padding: 0;
+}
+
+.titlepage span {
+     font-size: 17px;
+     line-height: 25px;
+     color: #0a0a0a;
+     padding-top: 30px;
+     display: block;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.read_more {
+     font-size: 17px;
+     background-color: #1b1b1a;
+     color: #fff;
+     padding: 17px 0px;
+     width: 100%;
+     max-width: 186px;
+     text-align: center;
+     display: inline-block;
+     transition: ease-in all 0.5s;
+     font-weight: 500;
+     border-radius: 5px;
+     height: 60px;
+     text-transform: uppercase;
+}
+
+.read_more:hover {
+     background: #f4a111;
+     color: #fff;
+     transition: ease-in all 0.5s;
+}
+
+
+/* three_box */
+
+.three_box {
+}
+
+.const {
+     padding: 20px;
+     background-color: #ffffff;
+     transition: ease-in all 0.5s;
+     border-radius: 200px;
+     margin-top: 20px;
+}
+
+.const span {
+     transition: ease-in all 0.5s;
+     display: block;
+     font-size: 16px;
+     font-weight: 700;
+     text-transform: uppercase;
+     font-family: 'Raleway', sans-serif;
+     color: #090a0b;
+     padding-top: 35px;
+     line-height: 20px;
+}
+.const i img{
+     width: 50px;
+}
+@keyframes magnify {
+     from {
+          font-size: 16px;
+     }
+     to{
+          font-size: 24px;
+     }
+}
+@keyframes border_change {
+     from {
+          border: white solid 2px;
+     }
+     to{
+          border: red solid 2px;
+     }
+}
+
+@keyframes mag_img {
+     from {
+          width: 50px;
+     }
+     to{
+          width: 65px;
+     }
+}
+
+#text_hover:hover.const {
+     transition: ease-in all 0.5s;
+     cursor: pointer;
+}
+
+#text_hover:hover.const span {
+     color: rgb(33, 107, 90);
+     transition: ease-in all 0.5s;
+     animation: magnify;
+     animation-duration: 1s;
+     font-size: 24px;
+}
+#text_hover:hover.const i img{
+     animation: mag_img;
+     animation-duration: 1s;
+     width: 65px;
+}
+/* end three_box */
+
+
+
+
+
+
+
+
+/** contact section **/
+
+.contact {
+     background: #fff;
+     margin-top: 90px;
+}
+
+.contact .titlepage {
+     text-align: left;
+}
+
+.main_form {
+     padding: 40px 80px;
+     background: url(../images/sky.jpg);
+     background-size: 100% 100%;
+     box-shadow: 0 0 250px rgba(238, 12, 12, 0.15);
+}
+
+.main_form .contactus {
+     border: #fff solid 1px;
+     padding: 0px 20px;
+     margin-bottom: 25px;
+     width: 100%;
+     height: 44px;
+     background: rgba(255, 255, 255, 0.216);
+     color: #000000;
+     font-size: 17px;
+     font-weight: normal;
+     box-shadow: 0px 0px 18px rgba(22, 22, 23, 0.11);
+}
+
+
+.main_form .textarea {
+     border: #fff solid 1px;
+     margin-bottom: 25px;
+     width: 100%;
+     background: rgba(255, 255, 255, 0.216);
+     color: #000000;
+     font-size: 17px;
+     font-weight: normal;
+     padding: 25px 20px 0 20px;
+     box-shadow: 0px 0px 18px rgba(22, 22, 23, 0.11);
+     height: 86px;
+}
+
+.main_form .send_btn {
+     font-size: 20px;
+     transition: ease-in all 0.5s;
+     background-color: #fc010183;
+     text-transform: uppercase;
+     color: #fff;
+     padding: 8px 0px;
+     max-width: 144px;
+     width: 100%;
+     display: block;
+     margin-top: 10px !important;
+     font-weight: 500;
+}
+
+.main_form .send_btn:hover {
+     background-color: #fe0101;
+     transition: ease-in all 0.5s;
+     color: #fff;
+}
+
+#request *::placeholder {
+     color: #00000083;
+     opacity: 1;
+}
+
+.padding_right0 {
+     padding-right: 0;
+}
+
+.padding_left0 {
+     padding-left: 0;
+}
+
+
+/** end contact section **/
+
+
+
+
+
+
+
+
+/*truck*/
+
+.truck {
+     height: 200px;
+}
+
+.truck_img1 {
+     width: 244px;
+     height: 147px;
+     position: relative;
+     position: relative;
+     -webkit-animation: myfirst 15s linear 0s infinite alternate;
+     /* Safari 4.0 - 8.0 */
+     animation: myfirst 15s linear 0s infinite alternate;
+}
+
+.end_block{
+     height: 250px;
+     background: rgba(0, 0, 0, 0.749);
+     background-size: 100% 100%;
+
+}
